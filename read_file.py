@@ -13,3 +13,20 @@ for line in f:
 f.close()
 
 print(len(lines))
+
+
+ff = open("myfile.txt", 'r')
+try:
+	contents = ff.readlines()
+finally:
+	ff.close()
+print(contents)
+
+
+
+
+
+
+with open("myfile.txt", "r") as fp:
+	contents = fp.readlines()
+	print(contents)
